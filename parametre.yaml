@@ -1,0 +1,9 @@
+paths:
+	DATA_DIR = 'dataset/data'
+	MODELS_DIR ='model'
+
+parameters:
+	IMAGE_WIDTH = 128
+	IMAGE_HEIGHT = IMAGE_WIDTH
+	IMAGE_DEPTH = 3
+    
