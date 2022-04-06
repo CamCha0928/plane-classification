@@ -1,0 +1,6 @@
+DATA_DIR: dataset/data
+MODELS_DIR: model
+TARGET_NAME : manufacturer
+IMAGE_WIDTH: 128
+IMAGE_HEIGHT: 128
+IMAGE_DEPTH: 3
