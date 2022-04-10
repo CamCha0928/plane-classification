@@ -1,0 +1,12 @@
+{0: Boeing 707, 1: Boeing 727, 2: Boeing 737, 3: Boeing 747, 4: Boeing 757, 5: Boeing
+    767, 6: Boeing 777, 7: A300, 8: A310, 9: A320, 10: A330, 11: A340, 12: A380, 13: ATR-42,
+  14: ATR-72, 15: An-12, 16: BAE 146, 17: BAE-125, 18: Beechcraft 1900, 19: Boeing
+    717, 20: C-130, 21: C-47, 22: CRJ-200, 23: CRJ-700, 24: Cessna 172, 25: Cessna
+    208, 26: Cessna Citation, 27: Challenger 600, 28: DC-10, 29: DC-3, 30: DC-6, 31: DC-8,
+  32: DC-9, 33: DH-82, 34: DHC-1, 35: DHC-6, 36: Dash 8, 37: DR-400, 38: Dornier 328,
+  39: Embraer E-Jet, 40: EMB-120, 41: Embraer ERJ 145, 42: Embraer Legacy 600, 43: Eurofighter
+    Typhoon, 44: F-16, 45: F/A-18, 46: Falcon 2000, 47: Falcon 900, 48: Fokker 100,
+  49: Fokker 50, 50: Fokker 70, 51: Global Express, 52: Gulfstream, 53: Hawk T1, 54: Il-76,
+  55: L-1011, 56: MD-11, 57: MD-80, 58: MD-90, 59: Metroliner, 60: King Air, 61: PA-28,
+  62: SR-20, 63: Saab 2000, 64: Saab 340, 65: Spitfire, 66: Tornado, 67: Tu-134, 68: Tu-154,
+  69: Yak-42}
