@@ -7,12 +7,16 @@ import yaml
 import seaborn as sns
 import datetime
 import streamlit as st
+import os
 
 from PIL import Image
 
+
+os.listdir('../model')
+
 # Open files
 
-with open('parametre.yaml') as yaml_data:
+with open('app.yaml') as yaml_data:
     params = yaml.safe_load(yaml_data)
     
 
@@ -54,7 +58,7 @@ def predict_image(path, model):
 def load_model(path):
     """Load tf/Keras model for prediction
     """
-    return tf.keras.models.load_model('model/'+path+'.h5')
+    return tf.keras.models.load_model(path)
 
 
 st.title("Aircraft identification")
@@ -71,16 +75,17 @@ choose_data = st.sidebar.selectbox('Choose your Data', ('','Manufacturer', 'Fami
 
 predict_air = st.button("Identify", disabled=(uploaded_file is None))
 
+
 if choose_data == 'Manufacturer' :
-    model = load_model('manufacturer')
+    model = load_model('../model/manufacturer.h5')
     with open('label_manufacturer.yaml') as file:
         label = yaml.safe_load(file)
 
 if choose_data == 'Family' :
-    model = load_model('family')
+    model = load_model('../model/family.h5')
     with open('label_family.yaml') as file:
         label = yaml.safe_load(file)
-    
+
 if predict_air:
 
     prediction, prediction_vector = predict_image(uploaded_file, model)
@@ -93,6 +98,3 @@ if bar_air:
     chart_data = pd.DataFrame(prediction_vector.T, index=list(label.values()))
     st.bar_chart(chart_data)
 st.snow()
-
-PATH_MODEL = '../models/' + TARGET_NAME + '.h5'
-PATH_CLASSES = '../models/' + TARGET_NAME + '_classes.txt'
