@@ -20,7 +20,7 @@ In addition, we have also integrated the labels of the planes of the different t
 
 ## Model
 ***
-This file contains our models on the target variables Manufacturer and Family.
+This file contains our models on the target variables Manufacturer and Family in case "releases".
 
 
 ## Authors
