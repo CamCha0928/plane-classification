@@ -10,7 +10,7 @@ Thus, in the context of a course on Big Data, our professor and I created an app
 
 ## Notebook
 *** 
-In this repository we have made available the notebook on which our model is based.
+In this folder we have made available the notebook on which our model is based.
 
 ## App
 *** 
